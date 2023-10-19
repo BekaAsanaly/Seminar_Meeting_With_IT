@@ -7,20 +7,20 @@
 
 Console.WriteLine("Enter the number");
 int number = Convert.ToInt32(Console.ReadLine());
-int threeDigitNumber = 99;
+int thirdDigitNumber = 0;
 if (number > 99)
 {
     if (number > 99 && number < 999)
     {
-        threeDigitNumber = number % 10;
+        thirdDigitNumber = number % 10;
     }
     
     while (number > 999)
     {
         number = number / 10;
-        threeDigitNumber = number % 10;
+        thirdDigitNumber = number % 10;
     }
-    System.Console.WriteLine(threeDigitNumber);
+    System.Console.WriteLine(thirdDigitNumber);
 }
 
 else
